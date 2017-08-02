@@ -1,0 +1,30 @@
+{
+    "name": "smarcet/outlook-rest-client",
+    "description": "Outlook REST Api Client",
+    "keywords": [
+        "Outlook", "REST Api", "synchronization", "Calendar"
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "^6.3",
+        "league/oauth2-client": "^2.2",
+        "vlucas/phpdotenv": "^2.4@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Marcet",
+            "email": "smarcet@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OutlookRestClient\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
