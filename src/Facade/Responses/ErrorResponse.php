@@ -12,13 +12,23 @@
  * limitations under the License.
  **/
 
-
-
 /**
  * Class ErrorResponse
  * @package OutlookRestClient\Facade\Responses
  */
 final class ErrorResponse extends AbstractResponse
 {
+    /**
+     * @return string|null
+     */
+    public function getErrorCode(){
+        return isset($this->content["error"]) && isset($this->content["error"]["code"]) ? $this->content["error"]["code"]:null;
+    }
 
+    /**
+     * @return string|null
+     */
+    public function getErrorMessage(){
+        return isset($this->content["error"]) && isset($this->content["error"]["message"]) ? $this->content["error"]["message"]:null;
+    }
 }
